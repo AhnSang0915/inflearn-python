@@ -51,7 +51,7 @@ print('a - ', a)
 a['rank'] = [1, 2, 3]
 print('a - ', a)
 
-#딕셔너리 추가
+#딕셔너리 길이
 print('a - ', len(a)) # 키의 갯수 
 print('a - ', len(b))
 print('a - ', len(c))
@@ -60,16 +60,62 @@ print('a - ', len(d))
 # dict_keys, dict_value, dict_items : 반복문(__iter__)에서 사용 가능
 
 print('a _ ', a.keys())
-print('a _ ', b.keys())
-print('a _ ', c.keys())
-print('a _ ', d.keys())
-print('a _ ', list(a.keys()))
-print('a _ ', list(b.keys()))
+print('b _ ', b.keys())
+print('c _ ', c.keys())
+print('d _ ', d.keys())
+print('e _ ', list(a.keys()))
+print('f _ ', list(b.keys()))
 
 print()
 
 print('a _ ', a.values())
-print('a _ ', b.values())
-print('a _ ', c.values())
+print('b _ ', b.values())
+print('c _ ', c.values())
 print('a _ ', list(a.values()))
-print('a _ ', list(b.values()))
+print('b _ ', list(b.values()))
+
+print()
+
+print('a _ ', a.items()) # 튜플 형태로 키와 밸류 출력
+print('b _ ', b.items())
+print('c _ ', c.items())
+
+print('a _ ', list(a.items()))
+print('b _ ', list(b.items()))
+
+print()
+
+print('a - ', a.pop('name')) # 꺼내오고 제거
+print('a - ', a)
+
+print('c - ', c.pop('arr')) # 꺼내오고 제거
+print('c - ', c)
+
+print()
+
+print('f - ', f.popitem()) #임의의 키와 밸류를 꺼내고 제거
+print('f - ', f)
+print('f - ', f.popitem())
+print('f - ', f)
+print('f - ', f.popitem())
+print('f - ', f)
+
+print()
+
+print('a - ', 'birth' in a)
+print('a - ', 'City' in d)
+
+# 수정 & 추가
+a['test'] = 'test_dict'
+
+print('a - ', a)
+
+a['address'] = 'dj'
+print('a - ', a)
+
+a.update(birth = '910904')
+print('a - ', a)
+
+temp = {'address' : 'Busan'}
+a.update(temp)
+print('a - ', a)
