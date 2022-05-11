@@ -44,7 +44,7 @@ q = random.choice(words)
 # 정답 단어
 word = q[0].strip()
 
-# 추측 언어
+# 추측 언어 아래 코드에서 guesses에 합해진다
 guesses = ""
 
 # 기회
