@@ -20,7 +20,7 @@ time.sleep(0.5)
 word = "secret"
 
 # 추측 언어
-guesses = ""
+guesses = "" # 아래 guess input에 들어가 더해지는 값
 
 # 기회
 turns = 10
