@@ -65,6 +65,7 @@ while turns > 0 :
         # 남은 기회 출력
         print("You have", turns, "more guesses!")
         if turns == 0:
+            # 턴을 모두 사용했을경우 게임 종료
             print("You hangman game failed, Bye...")
 
 
